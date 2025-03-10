@@ -52,13 +52,6 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      
-      {/* Footer */}
-      <footer className="absolute bottom-0 bg-black w-full text-center text-sm text-gray-200 p-4">
-        <p>
-          Made with ❤️ by <strong>Boundif team</strong>. All rights reserved.
-        </p>
-      </footer>
     </div>
     
   );
