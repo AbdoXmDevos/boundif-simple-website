@@ -2,6 +2,7 @@
 // pages/index.tsx
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/ModeToggle"; // Import ModeToggle component
+import {Download} from "lucide-react"
 
 
 import Image from 'next/image';
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <div className="h-screen bg- flex items-center justify-center">
       {/* Logo at the top left */}
-      <div className="absolute top-4 lg:left-10 z-10">
+      <div className="absolute top-4 lg:left-10 z-10 invisible md:visible">
         <Image
           src="/logo-website.png" // Replace with your actual logo image path
           alt="Logo"
@@ -22,7 +23,7 @@ export default function Home() {
         <ModeToggle /> {/* Add the ModeToggle component */}
         
         </div>
-      <div className="w-full h-full flex flex-col md:flex-row items-center justify-center p-10">
+      <div className="w-full h-full flex flex-col md:flex-row items-center justify-center">
         {/* Left side: Phone Mockup */}
         <div className="flex-1 flex justify-center mb-6 md:mb-0">
           <div className="relative w-[250px] h-[500px] sm-20 mt-10 md:w-[300px] md:h-[700px] hover:scale-120 transition-transform duration-300">
@@ -47,6 +48,7 @@ export default function Home() {
             }}
           >
            تحميل التطبيق
+           <Download className="mr-2" size={24} />
           </Button>
         </div>
       </div>
